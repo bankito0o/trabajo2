@@ -44,19 +44,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng Lugares = new LatLng(-36.603367, -72.091297);
-        LatLng Lugares1 = new LatLng(-36.604587, -72.083914);
-        LatLng Lugares2 = new LatLng(-36.6119628,-72.07268723);
-        LatLng Grez = new LatLng(-36.602517302817866,-72.10115649861793);
-        LatLng Felipe =new LatLng(-36.635414, -71.996863);
+        LatLng Local1 = new LatLng( -36.6027, -72.1028);
+        LatLng Local2 = new LatLng(-36.6068, -72.1022);
+        LatLng Local3 = new LatLng(-36.6210, -72.0900);
+        LatLng Local4 = new LatLng(-36.6320, -72.1100);
+        LatLng Yo = new LatLng(-36.589959970554084, -72.08217711887752);
 
 
-        mMap.addMarker(new MarkerOptions().position(Lugares).title("Heladeria y Cafeteria Cremossos"));
-        mMap.addMarker(new MarkerOptions().position(Lugares1).title("Cecinas Ramos Cordillera"));
-        mMap.addMarker(new MarkerOptions().position(Grez).title("Grez y Ulloa"));
-        mMap.addMarker(new MarkerOptions().position(Felipe).title("Felipe"));
+        mMap.addMarker(new MarkerOptions().position(Local1).title("Local1"));
+        mMap.addMarker(new MarkerOptions().position(Local2).title("Local2"));
+        mMap.addMarker(new MarkerOptions().position(Local3).title("Local3"));
+        mMap.addMarker(new MarkerOptions().position(Local4).title("Local4"));
+        mMap.addMarker(new MarkerOptions().position(Yo).title("Informático Javier Suarez"));
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(Lugares2));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Yo));
         mMap.setMinZoomPreference(4.0F);
         mMap.setMaxZoomPreference(18.0f);
 

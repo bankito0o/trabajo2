@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final int duracion = 10000;
+    private final int duracion = 20000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
